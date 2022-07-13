@@ -27,7 +27,7 @@ class LabeledNumberInput extends React.Component {
 
         return (
             <div>
-                <label>{this.props.name}: </label>
+                <label>{this.props.name}</label>
                 <input 
                     type="number" 
                     min={this.props.min} 
