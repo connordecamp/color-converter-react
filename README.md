@@ -7,11 +7,8 @@ This is a React project bootstrapped with [bun](https://bun.sh/).
 ### Cloning the repo
 Make sure to run the following inside the directory
 ```sh
+cd <cloned-repo>
 bun install
-```
-
-```sh
-bun create react ./react-bun-app
 ```
 
 ### Development
