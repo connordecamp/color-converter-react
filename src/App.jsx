@@ -3,11 +3,12 @@ import * as React from "react";
 import "./App.css";
 import ColorCalculator from "./ColorCalculator";
 
-const HEX_REGEX = /[^A-Fa-f0-9]/;
 
 function App() {
   return (
-    <ColorCalculator />
+    <div class="container">
+      <ColorCalculator />
+    </div>
   );
 }
 
