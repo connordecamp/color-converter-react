@@ -13,12 +13,14 @@ function clampInputToRange(value, min, max) {
 class LabeledNumberInput extends React.Component {
     constructor(props) {
         super(props);
-        this.handleOnChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
-    handleOnChange(evnt) {
-        let clampedValue = clampInputToRange(evnt.target.value, this.props.min, this.props.max);
-        evnt.target.value = clampedValue;
+    handleChange(e) {
+        const minValue = parseInt(this.props.min);
+        const maxValue = parseInt(this.props.max);
+        let clampedValue = clampInputToRange(parseInt(e.target.value), minValue, maxValue);
+        e.target.value = clampedValue;
     }
 
     render() {
@@ -30,7 +32,7 @@ class LabeledNumberInput extends React.Component {
                     type="number" 
                     min={this.props.min} 
                     max={this.props.max} 
-                    onChange={this.handleOnChange} />
+                    onChange={this.handleChange} />
             </div>
         )
     }
