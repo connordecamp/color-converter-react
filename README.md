@@ -1,3 +1,6 @@
+# Color Converter
+A simple React project to convert RGB into hex values.
+
 # React with Bun runtime
 
 This is a React project bootstrapped with [bun](https://bun.sh/).
