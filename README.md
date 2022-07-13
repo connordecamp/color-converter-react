@@ -5,6 +5,10 @@ This is a React project bootstrapped with [bun](https://bun.sh/).
 ## Getting Started
 
 ### Cloning the repo
+Make sure to run the following inside the directory
+```sh
+bun install
+```
 
 ```sh
 bun create react ./react-bun-app
