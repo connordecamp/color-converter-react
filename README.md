@@ -5,7 +5,7 @@ This is a React project bootstrapped with [bun](https://bun.sh/).
 ## Getting Started
 
 ### Cloning the repo
-Make sure to run the following inside the directory
+Make sure to run the following commands to avoid errors with bun
 ```sh
 cd <cloned-repo>
 bun install
