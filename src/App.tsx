@@ -1,9 +1,5 @@
 import React, {useState} from 'react';
-import rgbToHex from "./utils/rgbToHex";
-import rgbToHsl from './utils/rgbToHsl';
-import rgbToHsv from './utils/rgbToHsv';
-import rgbToHwb from './utils/rgbToHwb';
-import rgbToCmyk from './utils/rgbToCmyk';
+import convertRgb from './utils/convertRgb';
 import './App.css';
 
 
@@ -35,11 +31,12 @@ function setBackgroundColor(hexString) {
 const App = () => {
   //console.log(rgbToHex(10, 100, 10));
   const [rgb, setRgb] = useState('65, 105, 225');
-  const hex = tryConvert(rgb, rgbToHex);
-  const hsl = tryConvert(rgb, rgbToHsl);
-  const hsv = tryConvert(rgb, rgbToHsv);
-  const hwb = tryConvert(rgb, rgbToHwb);
-  const cmyk = tryConvert(rgb, rgbToCmyk);
+  const hex = tryConvert(rgb, convertRgb.toHex);
+  const hsl = tryConvert(rgb, convertRgb.toHsl);
+  const hsv = tryConvert(rgb, convertRgb.toHsv);
+  const hwb = tryConvert(rgb, convertRgb.toHwb);
+  const cmyk = tryConvert(rgb, convertRgb.toCmyk);
+  
   if(hex)
     setBackgroundColor(hex);
 
