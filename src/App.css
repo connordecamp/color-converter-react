@@ -10,6 +10,7 @@
     flex-direction: column;
     text-align: center;
     color: white;
+    padding: 20px;
     align-items: center;
     gap: 20px;
 }
