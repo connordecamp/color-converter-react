@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import convertRgb from './utils/convertRgb';
 import './App.css';
-
+import Button from 'react-bootstrap/Button';
 
 function tryConvert(value: string, convertFunc: Function) {
   const splitValues: string[] = value.split(",");
@@ -36,7 +36,7 @@ const App = () => {
   const hsv = tryConvert(rgb, convertRgb.toHsv);
   const hwb = tryConvert(rgb, convertRgb.toHwb);
   const cmyk = tryConvert(rgb, convertRgb.toCmyk);
-  
+
   if(hex)
     setBackgroundColor(hex);
 

@@ -15,7 +15,8 @@
     gap: 20px;
 }
 
-.rgb-input-container {
+.rgb-input-container,
+.results {
     border: 10px solid #333;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px black; 
@@ -23,19 +24,10 @@
     background-color: #444;
 }
 
+
 .rgbInput {
     flex: 1 0 1.5rem;
     max-width: 200px;
     font-size: 18px;
     text-align: center;
-}
-
-.results {
-    display: flex;
-    flex-direction: column;
-    border: 10px solid #333;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px black;
-    background-color: #444;
-    padding: 1.25rem;
 }
