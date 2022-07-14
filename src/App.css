@@ -1,7 +1,7 @@
 :root {
-    --current-bg-color: royalblue;
+    --current-bg-color: rgb(65, 105, 225);
     background-color: var(--current-bg-color, 'black');
-    font-size: 28px;
+    font-size: 24px;
 }
 
 

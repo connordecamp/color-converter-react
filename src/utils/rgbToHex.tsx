@@ -1,5 +1,3 @@
-import path from "path";
-
 export default function rgbToHex(red: number, green: number, blue: number): string{
 
     if(red < 0 || red > 255)
