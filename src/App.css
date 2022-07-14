@@ -1,6 +1,7 @@
 :root {
-    background-color: darkslateblue;
-    font-size: 32px;
+    --current-bg-color: royalblue;
+    background-color: var(--current-bg-color, 'black');
+    font-size: 28px;
 }
 
 
@@ -10,13 +11,15 @@
     text-align: center;
     color: white;
     align-items: center;
+    gap: 20px;
 }
 
-.top-input {
+.rgb-input-container {
     border: 10px solid #333;
-    box-shadow: 5px red; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black; 
     padding: 1.25rem;
-    background-color: #555;
+    background-color: #444;
 }
 
 .rgbInput {
@@ -24,4 +27,14 @@
     max-width: 200px;
     font-size: 18px;
     text-align: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    background-color: #444;
+    padding: 1.25rem;
 }
