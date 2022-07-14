@@ -1,5 +1,5 @@
 # Color Converter
-A simple React project to convert RGB into hex values.
+A simple React project to convert RGB into other color values.
 
 # React with Bun runtime
 

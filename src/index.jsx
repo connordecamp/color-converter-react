@@ -9,35 +9,6 @@ import App from "./App";
  * - Calculator container to hold state
  */ 
 
-function StaticCalculator(props) {
-  return (
-    <div>
-      <fieldset>
-        <legend>RGB</legend>
-        <label>Red: </label>
-        <input type="number" min="1" max="255" />
-        <label>Blue: </label>
-        <input type="number" min="1" max="255" />
-        <label>Green: </label>
-        <input type="number" min="1" max="255" />
-      </fieldset>
-      <fieldset>
-        <legend>Hex</legend>
-        <label>#</label>
-        <input type="text" />
-      </fieldset>
-      <fieldset>
-        <legend>HSL</legend>
-        <label>Hue: </label>
-        <input type="number" min="0" max="100" />
-        <label>Saturation: </label>
-        <input type="number" min="0" max="100" />
-        <label>Lightness: </label>
-        <input type="number" min="0" max="100" />
-      </fieldset>
-    </div>
-  );
-}
 
 ReactDOM.render(
   <React.StrictMode>
