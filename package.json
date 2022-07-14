@@ -1,7 +1,9 @@
 {
   "name": "color-converter-react",
   "version": "0.0.49",
-  "dependencies": {
+  "homepage": "https://connordecamp.github.com/color-converter-react", 
+ "dependencies": {
+    "gh-pages": "^4.0.0",
     "jest": "^28.1.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.4.0",

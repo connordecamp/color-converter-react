@@ -24,6 +24,10 @@
     background-color: #444;
 }
 
+form {
+    text-align: right;
+}
+
 
 .rgbInput {
     flex: 1 0 1.5rem;

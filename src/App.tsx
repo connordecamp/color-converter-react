@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import convertRgb from './utils/convertRgb';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import OutputField from './components/OutputField';
 
 function tryConvert(value: string, convertFunc: Function) {
   const splitValues: string[] = value.split(",");
@@ -55,26 +55,11 @@ const App = () => {
       <div className="results">
         <h3>Converted Colors</h3>
         <form>
-          <div>
-            <label>Hex: </label>
-            <input value={hex} readOnly />
-          </div>
-          <div>
-            <label>HSL: </label>
-            <input value={hsl} readOnly />
-          </div>
-          <div>
-            <label>HSV: </label>
-            <input value={hsv} readOnly />
-          </div>
-          <div>
-            <label>HWB: </label>
-            <input type="text" value={hwb} readOnly />
-          </div>
-          <div>
-            <label htmlFor="">CMYK: </label>
-            <input type="text" value={cmyk} readOnly/>
-          </div>
+          <OutputField label="Hex: " value={hex} />
+          <OutputField label="HSL: " value={hsl} />
+          <OutputField label="HSV: " value={hsv} />
+          <OutputField label="HWB: " value={hwb} />
+          <OutputField label="CMYK: " value={cmyk} />
         </form>
       </div>
     </div>

@@ -6,23 +6,18 @@ A simple React project to convert RGB into other color values.
 This is a React project bootstrapped with [bun](https://bun.sh/).
 
 ## Getting Started
-
+You will need to install bun from https://bun.sh/.
 ### Cloning the repo
 Make sure to run the following commands to avoid errors with bun
 ```sh
-cd <cloned-repo>
+git clone git@github.com:connordecamp/color-converter-react.git
+cd color-converter-react
 bun install
-```
-
-### Development
-
-First, run the development server.
-
-```
 bun dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result. I want to figure out how to serve the site to gh-pages.
 
-You can start editing the page by modifying src/App.jsx. The page auto-updates as you edit the file.
+
+
 
