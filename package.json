@@ -1,8 +1,8 @@
 {
   "name": "color-converter-react",
   "version": "0.0.49",
-  "homepage": "https://connordecamp.github.com/color-converter-react", 
- "dependencies": {
+  "homepage": "https://connordecamp.github.io/color-converter-react",
+  "dependencies": {
     "gh-pages": "^4.0.0",
     "jest": "^28.1.3",
     "react": "^17.0.2",
@@ -10,7 +10,10 @@
     "react-dom": "^17.0.2",
     "web-vitals": "^1.0.1"
   },
-  "scripts": {},
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
