@@ -1,0 +1,27 @@
+:root {
+    background-color: darkslateblue;
+    font-size: 32px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.top-input {
+    border: 10px solid #333;
+    box-shadow: 5px red; 
+    padding: 1.25rem;
+    background-color: #555;
+}
+
+.rgbInput {
+    flex: 1 0 1.5rem;
+    max-width: 200px;
+    font-size: 18px;
+    text-align: center;
+}

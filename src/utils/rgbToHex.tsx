@@ -1,5 +1,5 @@
 
-export function rgbToHex(red: number, green: number, blue: number): string{
+export default function rgbToHex(red: number, green: number, blue: number): string{
 
     if(red < 0 || red > 255)
         return '';
